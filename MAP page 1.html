@@ -7,18 +7,18 @@
 	<p>This is a map of the campsite.</p>
 	<p>Your first clue is at grid reference 134 053.</p>
 	<p>Enter location name (ALL IN CAPS!)</p>
-	 <script>
+ <script>
   function checkPassword() {
    var password = document.getElementById("passwordBox");
    var passwordText = password.value;
-   if(passwordText == "HIGH ROPES") {
+   if(passwordText == "RBC") {
     return true;
    }
-   alert("Incorrect Location see help from video below!");
+   alert("Access denied! Incorrect password!");
    return false;
    }
  </script>
-	<br/>
+	<p>Password:<input id="passwordBox" type="password"/></p>
 	<img src="Map of camp.jpg"alt="Camp" style="height: 800px; width: 100%;"/> 	
 	<br/>
 	<a href="https://www.youtube.com/watch?v=FXuo_ocVMVU">
