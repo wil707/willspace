@@ -11,14 +11,14 @@
 	<p>(North is the Up, South is down)</p>
 <script>
   	function checkPassword() {
-   	var password = document.getElementById("passwordBox");
-   	var passwordText = password.value;
-   	if(passwordText == "FIRE AREA") {
-    	return true;
-   	}
-   	alert("Access denied! Incorrect password!");
-   	return false;
-  	 }
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "HIGH ROPES") {
+    return true;
+   }
+   alert("Incorrect location! See help below map");
+   return false;
+   }
  </script>
 	<p>Location:<input id="passwordBox" type="password"/></p>
 	<a href="HIGH ROPES.html" onclick="return checkPassword();">
