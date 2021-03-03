@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The missing food</title>
+ <title>Challenge 2</title>
+ <style>
+  body {
+   background-color: white;
+   padding: 30px;
+  }
+ </style>
+ <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "PGK") {
+    return true;
+   }
+   alert("Access denied! Incorrect password!");
+   return false;
+   }
+ </script>
 </head>
-<div style="color: black;font-size: 56pt; text-align: center;">
-   <p class="text"><b>Misson 2</b></p>
-</div>	
-<div style="background-color: black;color: white; height: 80%%; width: 100%; font-size: 40pt;">
-<p class="text">A hat was found at the location at 118 051.<br/>
-Enter the correct location into the box to gain further information.</b><br/>			
-</p>
-</div>
-<p><i>Signed By Mr X</i></p>
-<a href="LIST OF SUSPECTS.html"><img src="cub paw.png"alt="CUB PAW"/></a> 
+<body>
+	<p>Enter the first letter of each missing word into the password box to reveal the next clue.</p>
+	<p>Make sure all letters are in CAPITAL LETTERS!</p>
+	<p>Best of luck, Mr X.</p>
+	<img src="the scout promise.png"alt="high ropes"style="height: 600px; width: 100%;"/>	
+	<p>Password:<input id="passwordBox" type="password"/></p>
+	<a href="second clue.html" onclick="return checkPassword();">
+	Click here to submit password and reveal the clue.
+ 	</a>
 </body>
 </html>
