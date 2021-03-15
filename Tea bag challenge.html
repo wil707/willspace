@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Missing step</title>
+ <style>
+  body {
+   background-color: white;
+   padding: 30px;
+  }
+ </style>
+ <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "ADD MILK") {
+    return true;
+   }
+   alert("Access denied! Incorrect password!");
+   return false;
+   }
+ </script>
+</head>
+<body>
+	<p>This is a one word answer.</p>
+	<p>Answer the correct ingredient to reveal clue.</p>
+	<img src="steps to making tea.PNG"alt="knot"style="height: 600px; width: 100%;"/>
+		
+	<p>Password:<input id="passwordBox" type="passwordBox"/></p>
+	<a href="under construction.html" onclick="return checkPassword();">
+	Click here to submit password and reveal the clue.
+ 	</a><br/>
+</body>
+</html>
