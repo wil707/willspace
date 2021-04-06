@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Map of Camp</title>
+	<title>Map of Camp 4</title>
 </head>
 <body>
-	<p>This is a map of the campsite.</p>
-	<p>From the HIGH ROPES course, draw your finger south east.</p>
-	<p>Enter the first location you get to in the location box.</p>
+	<p>The Leaders call a break on the search.</p>
+	<p>They have the guid to make a cup of tea at the grid reference 152 025</p>
 	<p>You will find your next challenge here.</p>
-	<p>(North is the Up, South is down)</p>
+	<p>ALL IN CAPS</p>
 <script>
   	function checkPassword() {
    	var password = document.getElementById("passwordBox");
    	var passwordText = password.value;
-   	if(passwordText == "FIRE AREA") {
+   	if(passwordText == "EATING TENT") {
     	return true;
    	}
    	alert("Access denied! Incorrect password!");
    	return false;
   	 }
  </script>
-	<img src="Map of camp.JPG"alt="Camp" usemap="#Camp" style="height: 600px; width: 75%;"/> 	    
+	<p>Location:<input id="passwordBox" type="passwordBox"/></p>
+	<a href="Tea bag challenge.html" onclick="return checkPassword();">
+	Click here to submit.
+	<img src="Untitled.png"alt="Camp" usemap="#Camp" style="height: 600px; width: 75%;"/> 	    
 </body>
 </html>
